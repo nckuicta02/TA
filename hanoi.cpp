@@ -4,19 +4,6 @@ using namespace std;
 
 const int MAX = 1000;
 
-/* recursive hanoi */
-void hanoi(int num, char A, char B, char C, int &sp) {
-    if (num == 1) {
-        cout << "Plate move from tower " << A << " to tower " << C << endl;
-        sp++;
-    }
-    else {
-        hanoi(num - 1, A, C, B, sp);
-        hanoi(1, A, B, C, sp);
-        hanoi(num - 1, B, A, C, sp);
-    }
-    return;
-}
 
 /* move plates from source(src) to target(tar) */
 void move(int* src, int* tar, int &psrc, int &ptar, int &sp) {
