@@ -4,6 +4,10 @@ using namespace std;
 
 const int MAX = 1000;
 
+int haha(int cici) {
+    return cici;
+}
+
 
 /* move plates from source(src) to target(tar) */
 void move(int* src, int* tar, int &psrc, int &ptar, int &sp) {
